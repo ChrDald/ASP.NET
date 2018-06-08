@@ -1,0 +1,32 @@
+﻿body {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.checkoutForm {
+    border: 1px solid black;   
+}
+
+.sectionDiv {
+    border: 1px solid black;
+}
+
+.labelDiv {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.labelDiv label {
+    display: block;
+}
+
+.inputDiv {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.inputDiv input {
+    display: block;
+}
+.errorMessage {
+    color: red;
+}
