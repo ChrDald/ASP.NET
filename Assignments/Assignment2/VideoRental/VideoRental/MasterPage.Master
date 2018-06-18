@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="VideoRental.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- The master page "Nav" section if you can call it that -->
+            <asp:ImageButton ID="ibtnCustomers" runat="server" PostBackUrl="Customers.aspx" CssClass="ImageNav" Height="80px" ImageUrl="Images/Customers.png" Width="102px" CausesValidation="False" />
+            <asp:ImageButton ID="ibtnNewCustomer" runat="server" PostBackUrl="NewCustomer.aspx" CssClass="ImageNav" Height="80px" ImageUrl="Images/NewCustomers.jpg" Width="102px" CausesValidation="False" />        
+            <asp:ImageButton ID="ibtnNewMedia" runat="server" PostBackUrl="NewMedia.aspx" CssClass="ImageNav" Height="80px" ImageUrl="Images/NewMedia.png" Width="102px" CausesValidation="False" />        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

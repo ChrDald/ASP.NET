@@ -55,3 +55,5 @@ C:\Users\1796146\Desktop\ASP.NET\Repo\ASP.NET\Assignments\Assignment1\CD_Assigme
 C:\Users\1796146\Desktop\ASP.NET\Repo\ASP.NET\Assignments\Assignment1\CD_Assigment1\CD_Assigment1\obj\Debug\CD_Assigment1.csproj.CoreCompileInputs.cache
 C:\Users\1796146\Desktop\ASP.NET\Repo\ASP.NET\Assignments\Assignment1\CD_Assigment1\CD_Assigment1\obj\Debug\CD_Assigment1.dll
 C:\Users\1796146\Desktop\ASP.NET\Repo\ASP.NET\Assignments\Assignment1\CD_Assigment1\CD_Assigment1\obj\Debug\CD_Assigment1.pdb
+C:\Users\D\Desktop\ASP.NET\Assignments\Assignment1\CD_Assigment1\CD_Assigment1\obj\Debug\CD_Assigment1.csprojResolveAssemblyReference.cache
+C:\Users\D\Desktop\ASP.NET\Assignments\Assignment1\CD_Assigment1\CD_Assigment1\obj\Debug\CD_Assigment1.csproj.CoreCompileInputs.cache

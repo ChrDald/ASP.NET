@@ -55,3 +55,4 @@ C:\Users\1796146\Desktop\ASP.NET\InClass\WebApplication1\WebApplication1\obj\Deb
 C:\Users\1796146\Desktop\ASP.NET\InClass\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\1796146\Desktop\ASP.NET\InClass\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\1796146\Desktop\ASP.NET\InClass\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\D\Desktop\ASP.NET\InClass\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache

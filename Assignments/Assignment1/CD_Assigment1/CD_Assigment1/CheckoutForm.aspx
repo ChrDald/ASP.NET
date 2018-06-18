@@ -21,7 +21,7 @@
             <div class="sectionDiv">
                 <!-- label div -->
                 <div class="labelDiv">
-                    <label>Email Address:</label>
+                    <label for="txbEmail">Email Address:</label>
                     <label for="txbEmailReEntry">Email Re-entry:</label>
                     <label for="txbFirstName">First Name:</label>
                     <label for="txbLastName">Last Name:</label>

@@ -1,0 +1,8 @@
+﻿.checkoutDisplay {
+    background-color: rgba(130, 138, 149, 0.2);
+    padding: 3%;
+}
+
+.mainContainer {
+    box-shadow: 5px 10px 8px #888888;
+}
