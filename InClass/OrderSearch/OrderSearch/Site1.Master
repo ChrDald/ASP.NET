@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OrderSearch.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- header -->
+    <div style="background-color:black; color:white; width: 100%; padding:20px; text-align:center;">
+        <h1>Generic Header Using Master Page</h1>
+    </div>
+    <!-- Body -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- footer -->
+    <div style="background-color:dodgerblue; color:white; width: 100%; padding:20px; text-align:center;">
+        <h1>Generic Footer Using Master Page</h1>
+    </div>
+</body>
+</html>
