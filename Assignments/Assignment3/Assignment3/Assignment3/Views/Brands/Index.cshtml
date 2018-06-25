@@ -1,0 +1,26 @@
+﻿@model List<Assignment3.Models.Brand>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<h2>Available Brands</h2>
+
+<table class="table">
+
+    @foreach (var b in Model)
+    {
+        <tr>
+            <th>Brand Name</th>
+            <td>@b.BrandName</td>
+            <td>@Html.ActionLink("See Available Phones", "PhonesByBrand", new { id = b.ID })</td>
+        </tr>
+
+
+    }
+
+</table>
+

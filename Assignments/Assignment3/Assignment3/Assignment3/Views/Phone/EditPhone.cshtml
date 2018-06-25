@@ -1,0 +1,64 @@
+﻿@model Assignment3.ViewModels.AddPhoneViewModel
+@{
+    ViewBag.Title = "AddPhone";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add a new Phone</h2>
+
+@using (Html.BeginForm("AddPhoneConfirm", "Phone"))
+{
+    @Html.ValidationSummary(true, "Please fix the following errors")
+    
+    <div class="form-group">
+        @Html.LabelFor(p => p.PhoneName, "Phone Name")
+        @Html.TextBoxFor(p => p.PhoneName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.PhoneName)
+
+
+        @Html.HiddenFor(x => x.ID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.DateReleased, "Date Released")
+        @Html.TextBoxFor(p => p.DateReleased, "{0:d MMM yyyy}", new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(p => p.DateReleased)
+
+
+    </div>
+
+    <div class="form-group">
+            @Html.LabelFor(p => p.BrandId, "Brand Name")
+            @Html.DropDownListFor(p => p.BrandId, new SelectList(Model.Brands, "ID", "BrandName"), "Please Select a Brand", new { @class = "form-control" })
+            @Html.ValidationMessageFor(p => p.BrandId)
+
+
+    </div>
+
+    <div class="form-group">
+
+
+        @Html.LabelFor(p => p.PhoneTypeId, "Phone Type")
+        @Html.DropDownListFor(p => p.PhoneTypeId, new SelectList(Model.PhoneTypes, "ID", "DisplayText"), "Please Select a Phone Type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.PhoneTypeId)
+
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(p => p.ScreenSize, "Screen Size (in pixels)")
+        @Html.TextBoxFor(p => p.ScreenSize, new { @class = "form-control" })
+        @Html.ValidationMessageFor(p => p.ScreenSize)
+
+
+    </div>
+
+    <button type="submit" class="btn btn-info">Submit</button>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

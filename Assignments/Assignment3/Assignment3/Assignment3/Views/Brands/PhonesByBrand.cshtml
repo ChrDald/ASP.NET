@@ -1,0 +1,21 @@
+﻿@model List<Assignment3.Models.Phone>
+
+@{
+    ViewBag.Title = "PhonesByBrand";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Phones By Brand</h2>
+
+
+<ul>
+    @foreach (var p in Model)
+    {
+        <li>@Html.ActionLink(@p.PhoneName, "Details", "Phone", new { id = p.ID }, null)</li>
+    }
+</ul>
+
+
+
+
+

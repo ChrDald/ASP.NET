@@ -1,0 +1,28 @@
+﻿@model List<Assignment3.Models.Phone>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Our Phones</h2>
+
+<table class="table">
+    <tr>
+        <th>Phone Name</th>
+        <th>Available Actions</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.PhoneName</td>
+            <td>@Html.ActionLink("Details", "Details", new { id = p.ID }) |
+                @Html.ActionLink("Edit", "Edit", new { id = p.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = p.ID })
+            </td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Add New Phone", "AddPhone", null, new { @class = "btn btn-info" })
+
