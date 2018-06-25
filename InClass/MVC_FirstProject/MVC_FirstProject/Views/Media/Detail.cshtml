@@ -1,0 +1,19 @@
+﻿@model MVC_FirstProject.Models.Media
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <h2>Media Details</h2>
+
+    <ul>
+        <li>Media Name: @Model.Title</li>
+        <li>Media Type: @Model.MediaType</li>
+        <li>Media Genre: @Model.MediaGenre</li>
+    </ul>
+
+</div>
+

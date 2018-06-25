@@ -15,6 +15,7 @@
             Orders by date
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1">
                 <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="OrderID" HeaderText="OrderID" SortExpression="OrderID" />
                     <asp:BoundField DataField="CustomerID" HeaderText="CustomerID" SortExpression="CustomerID" />
                     <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" SortExpression="EmployeeID" />
@@ -40,6 +41,9 @@
 
             Product details
         </div>
+
+        <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px">
+        </asp:DetailsView>
 
     </form>
 </body>

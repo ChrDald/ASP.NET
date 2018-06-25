@@ -1,0 +1,42 @@
+﻿@model IEnumerable<MVC_FirstProject.Models.Media>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <h2>Index of Media</h2>
+
+    @{
+        if (Model.Any() == false)
+        {
+            <p>No medias available</p>
+        }
+        else
+        {
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                </tr>
+
+                @{
+                    foreach (var m in Model)
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(m.Title, "Detail", new { id = m.ID })</td>
+                            <td>@m.MediaGenre</td>
+                        </tr>
+                    }
+                }
+
+            </table>
+
+        }
+
+    }
+</div>
+
+

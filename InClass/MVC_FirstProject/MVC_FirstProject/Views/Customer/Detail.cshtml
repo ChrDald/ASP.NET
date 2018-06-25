@@ -1,0 +1,23 @@
+﻿@model MVC_FirstProject.Models.Customer
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <h2>Customer Details</h2>
+
+    <ul>       
+        <li>Customer Name: @Model.Name</li>
+        <li>Subscribed: @Model.Subscribed</li>
+        <li>Membership Type: @Model.MembershipType.Name</li>
+        @if (Model.Birthdate != null)
+        {
+            <li>@Model.Birthdate</li>
+        }
+        
+    </ul>
+    
+</div>
